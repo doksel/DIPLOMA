@@ -7,6 +7,9 @@ module.exports = {
         publicPath: '/public/',
         filename: "bundle.js"       // название создаваемого файла
     },
+    resolve:{
+        extension:['.js','.jsx']
+    },
     module:{
         rules:[   //загрузчик для jsx
             {
@@ -14,6 +17,7 @@ module.exports = {
                 exclude: /(node_modules)/,  // исключаем из обработки папку node_modules
                 loader: "babel-loader",   // определяем загрузчик
                 options:{
+                    cacheDirectory: true,
                     presets:["env", "react"]    // используемые плагины
                 }
             }
