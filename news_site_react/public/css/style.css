@@ -31,6 +31,7 @@ body{
     float: left;
     margin: 5px;
     background-color: rgb(187, 138, 138);
+    border-radius: 5px;
 
 }
 .bottomHeader_right{
@@ -39,6 +40,7 @@ body{
     float: right;
     margin: 5px;
     background-color: rgb(214, 204, 66);
+    border-radius: 5px;
 
 }
 .bottomHeader_right_inner_top{
@@ -47,4 +49,14 @@ body{
     font-weight: bold;
     text-align: center;
     height: 30px;
+    border-radius: 5px 5px 0 0;
+
+}
+.conteinerNews{
+    height: 500px;
+    width: 68%;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    margin: 5px;
+
 }
