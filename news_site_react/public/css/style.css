@@ -1,0 +1,50 @@
+body{
+    background-image: url(http://clipart-library.com/images/pT7rqkzBc.jpg);
+    /* background-image: url('./img/backgroud_body.png'); */
+    background-size: cover;
+    height: 1000px;
+}
+.topHeader{
+    height: 50px;
+    font-family: cursive;
+}
+.topHeader h1 {
+    font-family: cursive;
+    font-weight: bold;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 5px;
+}
+.navbar{
+    width: 100%;
+    margin-bottom: 0;
+}
+.bottomHeader{
+    height: 200px;
+    width: 100%;  
+    border-radius: 5px;
+}
+
+.bottomHeader_left{
+    height: 100%;
+    width: 68%;
+    float: left;
+    margin: 5px;
+    background-color: rgb(187, 138, 138);
+
+}
+.bottomHeader_right{
+    height: 100%; 
+    width: 30%;
+    float: right;
+    margin: 5px;
+    background-color: rgb(214, 204, 66);
+
+}
+.bottomHeader_right_inner_top{
+    background-color: rgb(114, 114, 114);
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    height: 30px;
+}

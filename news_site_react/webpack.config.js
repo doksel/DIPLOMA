@@ -17,7 +17,6 @@ module.exports = {
                 exclude: /(node_modules)/,  // исключаем из обработки папку node_modules
                 loader: "babel-loader",   // определяем загрузчик
                 options:{
-                    cacheDirectory: true,
                     presets:["env", "react"]    // используемые плагины
                 }
             }
