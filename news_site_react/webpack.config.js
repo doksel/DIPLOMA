@@ -7,8 +7,11 @@ module.exports = {
         publicPath: '/public/',
         filename: "bundle.js"       // название создаваемого файла
     },
+    devServer: {
+        historyApiFallback: true,
+      },
     resolve:{
-        extension:['.js','.jsx']
+        extensions:['.js','.jsx']
     },
     module:{
         rules:[   //загрузчик для jsx

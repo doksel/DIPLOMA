@@ -1,10 +1,10 @@
 import React from "react";
 
-class ConteinerNews extends React.Component {
+class ContainerNews extends React.Component {
     render() {
-      return <div className="conteinerNews">
+      return <div className="containerNews">
                 <h1> Travel... " I want to make memories all over the world "</h1>
              </div>;
     }
   }
-  module.exports = ConteinerNews;
+  export default ContainerNews;
