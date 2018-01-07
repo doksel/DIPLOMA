@@ -49,22 +49,25 @@ module.exports = {
             {
                 test: /\.jsx$/,
                 loader: "react-hot!babel",
-                exclude: [/node_modules/, /public/]
+                exclude: [/node_modules/, /public/],
+                options:{
+                    presets:["env", "react"]
+                }
             },
             {
                 test: /\.json$/,
                 loader: "json-loader"
             }
         ],
-        rules:[   //загрузчик для jsx
-            {
-                test: /\.jsx?$/, // определяем тип файлов
-                exclude: /(node_modules)/,  // исключаем из обработки папку node_modules
-                loader: "babel-loader",   // определяем загрузчик
-                options:{
-                    presets:["env", "react"]    // используемые плагины
-                }
-            }
-        ]
+        // rules:[   //загрузчик для jsx
+        //     {
+        //         test: /\.jsx?$/, // определяем тип файлов
+        //         exclude: /(node_modules)/,  // исключаем из обработки папку node_modules
+        //         loader: "babel-loader",   // определяем загрузчик
+        //         options:{
+        //             presets:["env", "react"]    // используемые плагины
+        //         }
+        //     }
+        // ]
     }
 }
