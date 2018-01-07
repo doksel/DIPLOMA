@@ -19,13 +19,13 @@ class App extends React.Component {
               <TopHeader />
               <Router>
                 <div>
-              <MyNavbar />
-              <BottomHeader />
+                  <MyNavbar />
+                  <BottomHeader />
                     <Switch>
-                        <Route exact path="/" component={Container} />
-                        <Route path="/containernav" component={ContainerNav} />
-                        <Route path="/containernews" component={ContainerNews} />
-                        <Route path="/registerform" component={RegisterForm} />
+                      <Route exact path="/" component={Container} />
+                      <Route path="/containernav" component={ContainerNav} />
+                      <Route path="/containernews" component={ContainerNews} />
+                      <Route path="/registerform" component={RegisterForm} />
                     </Switch>
                 </div>
               </Router>
