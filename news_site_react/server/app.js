@@ -6,7 +6,8 @@ const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "diploma"
+    database: "diploma",
+    // port: 8081
 });
 
 connection.connect((err) => {
@@ -25,9 +26,8 @@ app.get('/containernews/news', (req, res) => {
     let sql = "SELECT * FROM news";
     let query = connection.query(sql, (err, result) => {
         if (err) throw err;
-        console.log("Result: ");
         console.log(result);
-        res.send(result);
+        res.send('News getting...');
   });
 });
 // Get news
@@ -37,7 +37,6 @@ app.get('/containernews/news/:id', (req, res) => {
         if (err) throw err;
         console.log("Result: ");
         console.log(result);
-        res.send(result);
     });
 });
 // Create news
@@ -55,7 +54,6 @@ app.get('/containernews/addnewspost', (req, res) => {
         }
         console.log(result);
         res.send('News added....');
-        res.send(result);
     })
 });
 // Update news
@@ -70,7 +68,6 @@ app.get('/containernews/updatenews/:id', (req, res) => {
         if(err)throw err;
         console.log(result);
         res.send('News updated....');
-        res.send(result);
     })
 });
 // Delete news
@@ -80,7 +77,6 @@ app.get('/containernews/deletenews/:id', (req, res) => {
         if(err)throw err;
         console.log(result);
         res.send('News deleted....');
-        res.send(result);
     })
 });
 
