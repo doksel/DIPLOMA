@@ -16,7 +16,7 @@ class MyNavbar extends React.Component {
                       <Navbar.Collapse>
                           <Nav>
                           <LinkContainer to="/containernews">
-                            <NavItem eventKey={1}>Новости</NavItem>
+                            <NavItem eventKey={1} >Новости</NavItem>
                           </LinkContainer>
                           <LinkContainer to="/containernav">
                             <NavItem eventKey={2}>Контакты</NavItem>
