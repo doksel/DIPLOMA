@@ -1,0 +1,16 @@
+.containerNews{
+    height: 600px;
+    width: 68%;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    margin: 5px;
+    float: left;
+}
+.containerNav{
+    height: 600px;
+    width: 30%;
+    background-color: rgb(145, 40, 40);
+    opacity: 0.8;
+    margin: 5px;
+    float: right;
+}

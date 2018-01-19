@@ -12,6 +12,11 @@ import ContainerNews from "./components/container/container_news.jsx";
 import RegisterForm from "./components/registerForm.jsx";
 import Footer from "./components/footer/footer.jsx";
 
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
+import mainReducer from './reducers/mainReducer';
+
+const store = createStore (mainReducer);
 
 class App extends React.Component {
     render() {
@@ -35,7 +40,9 @@ class App extends React.Component {
 }
 
   ReactDOM.render(
-      <App />,
+    <Provider store={store}>
+      <App />
+    </Provider>,
       document.getElementById("app")
   )
 

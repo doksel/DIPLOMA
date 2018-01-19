@@ -1,9 +1,10 @@
 import React from "react";
+import NewsList from "../../containers/news_list";
 
 class ContainerNews extends React.Component {
     render() {
       return <div className="containerNews">
-                <h1> Travel... " I want to make memories all over the world "</h1>
+                <NewsList/>
              </div>;
     }
   }

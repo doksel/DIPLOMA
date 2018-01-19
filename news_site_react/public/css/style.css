@@ -1,6 +1,6 @@
 body{
-    background-image: url(http://clipart-library.com/images/pT7rqkzBc.jpg);
-    /* background-image: url('./img/backgroud_body.png'); */
+    /* background-image: url(http://clipart-library.com/images/pT7rqkzBc.jpg); */
+    background-image: url('../img/backgroud_body.png'); 
     background-size: cover;
     height: 1000px;
     position: relative;
@@ -96,4 +96,11 @@ body{
     margin: 5px;
     margin-top: 10px;
     padding-top: 150px;
+}
+.onenews{
+    width: 97%;
+    background-color: white;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 0 15px 0 15px;
 }
